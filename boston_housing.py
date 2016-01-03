@@ -10,6 +10,8 @@ from sklearn.tree import DecisionTreeRegressor
 ### ADD EXTRA LIBRARIES HERE ###
 ################################
 
+from IPython import embed
+
 
 def load_data():
     """Load the Boston dataset."""
@@ -28,6 +30,7 @@ def explore_city_data(city_data):
     ###################################
     ### Step 1. YOUR CODE GOES HERE ###
     ###################################
+    embed()
 
     # Please calculate the following values using the Numpy library
     # Size of data (number of houses)?
