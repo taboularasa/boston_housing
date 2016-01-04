@@ -11,6 +11,7 @@ from sklearn.tree import DecisionTreeRegressor
 ################################
 
 from IPython import embed
+import random
 
 
 def load_data():
@@ -30,7 +31,6 @@ def explore_city_data(city_data):
     ###################################
     ### Step 1. YOUR CODE GOES HERE ###
     ###################################
-    embed()
 
     # Please calculate the following values using the Numpy library
     # Size of data (number of houses)?
@@ -64,6 +64,15 @@ def split_data(city_data):
     ###################################
     ### Step 2. YOUR CODE GOES HERE ###
     ###################################
+    random.shuffle(X)
+    random.shuffle(y)
+
+    partition_idx = int(np.ceil(len(X) * 0.7))
+
+    X_train = X[:partition_idx]
+    X_test = X[partition_idx:]
+    y_train = y[:partition_idx]
+    y_test = y[partition_idx:]
 
     return X_train, y_train, X_test, y_test
 
