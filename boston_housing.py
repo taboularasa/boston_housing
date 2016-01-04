@@ -193,7 +193,7 @@ def fit_predict_model(city_data):
     print "House: " + str(x)
     print "Prediction: " + str(y)
 
-In the case of the documentation page for GridSearchCV, it might be the case that the example is just a demonstration of syntax for use of the function, rather than a statement about 
+    # In the case of the documentation page for GridSearchCV, it might be the case that the example is just a demonstration of syntax for use of the function, rather than a statement about
 def main():
     """Analyze the Boston housing data. Evaluate and validate the
     performanance of a Decision Tree regressor on the housing data.
